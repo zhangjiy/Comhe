@@ -7,10 +7,13 @@
 
 #import "CHomeHeaderListView.h"
 #import "CHomeHeaderCollectionViewCell.h"
+#import "CDrinkModel.h"
+#import "UIView+JYFrame.h"
 
 @interface CHomeHeaderListView () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView  *collectionView;
+@property (nonatomic, strong) CDrinkModel  *drinkModel;
 
 @end
 
@@ -35,11 +38,18 @@
     self.collectionView.frame = self.bounds;
 }
 
+- (CDrinkModel *)drinkModel {
+    if (!_drinkModel) {
+        _drinkModel = [[CDrinkModel alloc] init];
+    }
+    return _drinkModel;
+}
+
 - (UICollectionViewFlowLayout *)collectionViewFlowLayout {
     UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.minimumLineSpacing = 0;
+    layout.minimumLineSpacing = CHomeHeaderLineSpacing;
     layout.minimumInteritemSpacing = 0;
-    layout.itemSize = CGSizeMake(88, 88);
+    layout.itemSize = CHomeHeaderItemSize;
     layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     return layout;
@@ -66,11 +76,13 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 5;
+    return self.drinkModel.drinkList.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CHomeHeaderCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    CDrinkItem *item = self.drinkModel.drinkList[indexPath.row];
+    [cell updateViewWithModel:item];
     
     return cell;
 }

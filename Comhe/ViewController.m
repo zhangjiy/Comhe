@@ -9,6 +9,7 @@
 #import "CHomeHeaderView.h"
 #import "CPrefixHeader.h"
 #import "UIView+JYFrame.h"
+#import "UIColor+Extensions.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) CHomeHeaderView *headerView;
@@ -19,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = CHomeBackgroudColor;
     [self initSubViews];
 }
 

@@ -6,11 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CDrinkModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CHomeHeaderCollectionViewCell : UICollectionViewCell
-
+- (void)updateViewWithModel:(CDrinkItem *)item;
 @end
 
 NS_ASSUME_NONNULL_END

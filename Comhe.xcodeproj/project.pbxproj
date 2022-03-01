@@ -22,6 +22,8 @@
 		B422477727CC97DE00B93845 /* CHomeHeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B422477027CC97DE00B93845 /* CHomeHeaderCollectionViewCell.m */; };
 		B422477827CC97DE00B93845 /* CHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B422477127CC97DE00B93845 /* CHomeHeaderView.m */; };
 		B422477927CC97DE00B93845 /* UIView+JYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B422477327CC97DE00B93845 /* UIView+JYFrame.m */; };
+		B46B3F9627CDB51E004E4ABD /* CDrinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B3F9527CDB51E004E4ABD /* CDrinkModel.m */; };
+		B46B3F9927CDDA48004E4ABD /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B3F9827CDDA47004E4ABD /* UIColor+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		B422477327CC97DE00B93845 /* UIView+JYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYFrame.m"; sourceTree = "<group>"; };
 		B422477427CC97DE00B93845 /* UIView+JYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYFrame.h"; sourceTree = "<group>"; };
 		B42247BD27CC9E4100B93845 /* CPrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPrefixHeader.h; sourceTree = "<group>"; };
+		B46B3F9427CDB51E004E4ABD /* CDrinkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDrinkModel.h; sourceTree = "<group>"; };
+		B46B3F9527CDB51E004E4ABD /* CDrinkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDrinkModel.m; sourceTree = "<group>"; };
+		B46B3F9727CDDA47004E4ABD /* UIColor+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		B46B3F9827CDDA47004E4ABD /* UIColor+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 		B422476727CC97DE00B93845 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B46B3F9327CDB37E004E4ABD /* Model */,
 				B422476827CC97DE00B93845 /* Controller */,
 				B422476B27CC97DE00B93845 /* View */,
 			);
@@ -190,9 +197,20 @@
 			children = (
 				B422477427CC97DE00B93845 /* UIView+JYFrame.h */,
 				B422477327CC97DE00B93845 /* UIView+JYFrame.m */,
+				B46B3F9727CDDA47004E4ABD /* UIColor+Extensions.h */,
+				B46B3F9827CDDA47004E4ABD /* UIColor+Extensions.m */,
 				B42247BD27CC9E4100B93845 /* CPrefixHeader.h */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		B46B3F9327CDB37E004E4ABD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B46B3F9427CDB51E004E4ABD /* CDrinkModel.h */,
+				B46B3F9527CDB51E004E4ABD /* CDrinkModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +349,8 @@
 				B422477727CC97DE00B93845 /* CHomeHeaderCollectionViewCell.m in Sources */,
 				B422477527CC97DE00B93845 /* CHomeViewController.m in Sources */,
 				B422477827CC97DE00B93845 /* CHomeHeaderView.m in Sources */,
+				B46B3F9927CDDA48004E4ABD /* UIColor+Extensions.m in Sources */,
+				B46B3F9627CDB51E004E4ABD /* CDrinkModel.m in Sources */,
 				B422474327CC978600B93845 /* main.m in Sources */,
 				B422477627CC97DE00B93845 /* CHomeHeaderListView.m in Sources */,
 				B422473527CC978400B93845 /* SceneDelegate.m in Sources */,
