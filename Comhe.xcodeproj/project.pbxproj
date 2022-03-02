@@ -17,13 +17,15 @@
 		B422474D27CC978600B93845 /* ComheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B422474C27CC978600B93845 /* ComheTests.m */; };
 		B422475727CC978600B93845 /* ComheUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B422475627CC978600B93845 /* ComheUITests.m */; };
 		B422475927CC978600B93845 /* ComheUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B422475827CC978600B93845 /* ComheUITestsLaunchTests.m */; };
-		B422477527CC97DE00B93845 /* CHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B422476A27CC97DE00B93845 /* CHomeViewController.m */; };
 		B422477627CC97DE00B93845 /* CHomeHeaderListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B422476C27CC97DE00B93845 /* CHomeHeaderListView.m */; };
 		B422477727CC97DE00B93845 /* CHomeHeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B422477027CC97DE00B93845 /* CHomeHeaderCollectionViewCell.m */; };
 		B422477827CC97DE00B93845 /* CHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B422477127CC97DE00B93845 /* CHomeHeaderView.m */; };
 		B422477927CC97DE00B93845 /* UIView+JYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B422477327CC97DE00B93845 /* UIView+JYFrame.m */; };
 		B46B3F9627CDB51E004E4ABD /* CDrinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B3F9527CDB51E004E4ABD /* CDrinkModel.m */; };
 		B46B3F9927CDDA48004E4ABD /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B3F9827CDDA47004E4ABD /* UIColor+Extensions.m */; };
+		B46B3F9E27CDE2B8004E4ABD /* CHomeSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B3F9D27CDE2B8004E4ABD /* CHomeSwitchView.m */; };
+		B46B3FA127CDE842004E4ABD /* CHomeMoidView.m in Sources */ = {isa = PBXBuildFile; fileRef = B46B3FA027CDE842004E4ABD /* CHomeMoidView.m */; };
+		B48708D227CF1A0A00E97E22 /* UIDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B48708D127CF1A0A00E97E22 /* UIDeviceHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +63,6 @@
 		B422475227CC978600B93845 /* ComheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B422475627CC978600B93845 /* ComheUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComheUITests.m; sourceTree = "<group>"; };
 		B422475827CC978600B93845 /* ComheUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComheUITestsLaunchTests.m; sourceTree = "<group>"; };
-		B422476927CC97DE00B93845 /* CHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHomeViewController.h; sourceTree = "<group>"; };
-		B422476A27CC97DE00B93845 /* CHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHomeViewController.m; sourceTree = "<group>"; };
 		B422476C27CC97DE00B93845 /* CHomeHeaderListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHomeHeaderListView.m; sourceTree = "<group>"; };
 		B422476D27CC97DE00B93845 /* CHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHomeHeaderView.h; sourceTree = "<group>"; };
 		B422476E27CC97DE00B93845 /* CHomeHeaderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHomeHeaderCollectionViewCell.h; sourceTree = "<group>"; };
@@ -76,6 +76,12 @@
 		B46B3F9527CDB51E004E4ABD /* CDrinkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDrinkModel.m; sourceTree = "<group>"; };
 		B46B3F9727CDDA47004E4ABD /* UIColor+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
 		B46B3F9827CDDA47004E4ABD /* UIColor+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		B46B3F9C27CDE2B8004E4ABD /* CHomeSwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeSwitchView.h; sourceTree = "<group>"; };
+		B46B3F9D27CDE2B8004E4ABD /* CHomeSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeSwitchView.m; sourceTree = "<group>"; };
+		B46B3F9F27CDE842004E4ABD /* CHomeMoidView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeMoidView.h; sourceTree = "<group>"; };
+		B46B3FA027CDE842004E4ABD /* CHomeMoidView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeMoidView.m; sourceTree = "<group>"; };
+		B48708D027CF1A0A00E97E22 /* UIDeviceHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDeviceHelper.h; sourceTree = "<group>"; };
+		B48708D127CF1A0A00E97E22 /* UIDeviceHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +179,6 @@
 		B422476827CC97DE00B93845 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B422476927CC97DE00B93845 /* CHomeViewController.h */,
-				B422476A27CC97DE00B93845 /* CHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,12 +186,8 @@
 		B422476B27CC97DE00B93845 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B422476D27CC97DE00B93845 /* CHomeHeaderView.h */,
-				B422477127CC97DE00B93845 /* CHomeHeaderView.m */,
-				B422476F27CC97DE00B93845 /* CHomeHeaderListView.h */,
-				B422476C27CC97DE00B93845 /* CHomeHeaderListView.m */,
-				B422476E27CC97DE00B93845 /* CHomeHeaderCollectionViewCell.h */,
-				B422477027CC97DE00B93845 /* CHomeHeaderCollectionViewCell.m */,
+				B46B3F9B27CDE288004E4ABD /* Switch */,
+				B46B3F9A27CDE267004E4ABD /* Header */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +200,8 @@
 				B46B3F9727CDDA47004E4ABD /* UIColor+Extensions.h */,
 				B46B3F9827CDDA47004E4ABD /* UIColor+Extensions.m */,
 				B42247BD27CC9E4100B93845 /* CPrefixHeader.h */,
+				B48708D027CF1A0A00E97E22 /* UIDeviceHelper.h */,
+				B48708D127CF1A0A00E97E22 /* UIDeviceHelper.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -211,6 +213,30 @@
 				B46B3F9527CDB51E004E4ABD /* CDrinkModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B46B3F9A27CDE267004E4ABD /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				B422476D27CC97DE00B93845 /* CHomeHeaderView.h */,
+				B422477127CC97DE00B93845 /* CHomeHeaderView.m */,
+				B422476F27CC97DE00B93845 /* CHomeHeaderListView.h */,
+				B422476C27CC97DE00B93845 /* CHomeHeaderListView.m */,
+				B422476E27CC97DE00B93845 /* CHomeHeaderCollectionViewCell.h */,
+				B422477027CC97DE00B93845 /* CHomeHeaderCollectionViewCell.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		B46B3F9B27CDE288004E4ABD /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				B46B3F9C27CDE2B8004E4ABD /* CHomeSwitchView.h */,
+				B46B3F9D27CDE2B8004E4ABD /* CHomeSwitchView.m */,
+				B46B3F9F27CDE842004E4ABD /* CHomeMoidView.h */,
+				B46B3FA027CDE842004E4ABD /* CHomeMoidView.m */,
+			);
+			path = Switch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,13 +371,15 @@
 			files = (
 				B422473827CC978400B93845 /* ViewController.m in Sources */,
 				B422473227CC978400B93845 /* AppDelegate.m in Sources */,
+				B48708D227CF1A0A00E97E22 /* UIDeviceHelper.m in Sources */,
 				B422477927CC97DE00B93845 /* UIView+JYFrame.m in Sources */,
 				B422477727CC97DE00B93845 /* CHomeHeaderCollectionViewCell.m in Sources */,
-				B422477527CC97DE00B93845 /* CHomeViewController.m in Sources */,
+				B46B3FA127CDE842004E4ABD /* CHomeMoidView.m in Sources */,
 				B422477827CC97DE00B93845 /* CHomeHeaderView.m in Sources */,
 				B46B3F9927CDDA48004E4ABD /* UIColor+Extensions.m in Sources */,
 				B46B3F9627CDB51E004E4ABD /* CDrinkModel.m in Sources */,
 				B422474327CC978600B93845 /* main.m in Sources */,
+				B46B3F9E27CDE2B8004E4ABD /* CHomeSwitchView.m in Sources */,
 				B422477627CC97DE00B93845 /* CHomeHeaderListView.m in Sources */,
 				B422473527CC978400B93845 /* SceneDelegate.m in Sources */,
 			);

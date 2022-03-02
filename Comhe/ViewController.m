@@ -12,6 +12,8 @@
 #import "UIColor+Extensions.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) UIView *navigationBar;
+@property (nonatomic, strong) UISegmentedControl *segment;
 @property (nonatomic, strong) CHomeHeaderView *headerView;
 @end
 
@@ -25,16 +27,47 @@
 }
 
 - (void)initSubViews {
+    [self.view addSubview:self.navigationBar];
+    [self.navigationBar addSubview:self.segment];
     [self.view addSubview:self.headerView];
     [self.view layoutIfNeeded];
 }
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    self.headerView.width = self.view.width - CHomeLeft * 2;
-    self.headerView.height = CHomeHeaderHeight;
-    self.headerView.top = CHomeHeaderTop;
-    self.headerView.left = CHomeLeft;
+    
+    _navigationBar.width = self.view.width;
+    _navigationBar.height = CNavigationBarHeight;
+    
+    _segment.width = CHomeSegmentWidth;
+    _segment.height = CHomeSegmentHeight;
+    _segment.top = StatusBarHeight + CHomeItemInset;
+    _segment.centerX = self.view.width / 2.0;
+    
+    _headerView.width = self.view.width - CHomeLeft * 2;
+    _headerView.height = CHomeHeaderHeight;
+    _headerView.top = _navigationBar.bottom + CHomeViewMagin;
+    _headerView.left = CHomeLeft;
+}
+
+- (UIView *)navigationBar {
+    if (!_navigationBar) {
+        _navigationBar = [[UIView alloc] initWithFrame:CGRectZero];
+        _navigationBar.backgroundColor = CNavigationBarBackgroudColor;
+    }
+    
+    return _navigationBar;
+}
+
+- (UISegmentedControl *)segment {
+    if (!_segment) {
+        _segment = [[UISegmentedControl alloc] initWithItems:@[@"白酒", @"啤酒", @"红酒"]];
+        _segment.tintColor = CThemeBlueColor;
+        [_segment addTarget:self action:@selector(didChangeValueOfSegmentControl:) forControlEvents:UIControlEventValueChanged];
+        _segment.selectedSegmentIndex = 0;
+    }
+    
+    return _segment;
 }
 
 - (CHomeHeaderView *)headerView {
@@ -43,6 +76,23 @@
     }
 
     return _headerView;
+}
+
+- (void)didChangeValueOfSegmentControl:(UISegmentedControl *)segment {
+    switch (segment.selectedSegmentIndex) {
+        case 0: {
+            
+            break;
+        }
+        case 1: {
+            break;
+        }
+        case 2: {
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 @end
